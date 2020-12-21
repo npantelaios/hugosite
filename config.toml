@@ -1,4 +1,4 @@
-baseURL = "https://npantelaios.github.io/quickstart"
+baseURL = "https://npantelaios.github.io/hugosite"
 languageCode = "en-us"
 title = "Nikolaos Pantelaios"
 theme = "hugocoder"
