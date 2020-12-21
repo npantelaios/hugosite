@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://npantelaios.github.io/hugosite/cv/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://npantelaios.github.io/hugosite/about/</loc>
   </url>
   

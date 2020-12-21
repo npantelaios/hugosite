@@ -17,16 +17,25 @@
     </item>
     
     <item>
-      <title>About Hugo</title>
+      <title></title>
+      <link>https://npantelaios.github.io/hugosite/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://npantelaios.github.io/hugosite/cv/</guid>
+      <description>1-page CV</description>
+    </item>
+    
+    <item>
+      <title>About - Nikolaos Pantelaios</title>
       <link>https://npantelaios.github.io/hugosite/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://npantelaios.github.io/hugosite/about/</guid>
-      <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.
-Setup Some fun facts about Hugo:
- Built in Go Loosely inspired by Jekyll Primarily developed by spf13 on the train while commuting to and from Manhattan. Coded in Vim using spf13-vim  Have questions or suggestions?</description>
+      <description>PhD Researcher - NCSU
+Hello everyone, I am Nikolaos(Nikos) and I am a 3rd year phd student at NCSU. I am a passionate researcher in web security and I am interested in collaborations in projects about security.
+Research Interests:
+ Web Security User Privacy Data Science Machine Learning  Advisor:
+ Kapravelos Alexandros  Thanks for reading!</description>
     </item>
     
   </channel>

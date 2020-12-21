@@ -1,29 +1,22 @@
 +++
-title = "About Hugo"
+title = "About - Nikolaos Pantelaios"
 slug = "about"
 +++
 
-Hugo is a static site engine written in Go.
+**PhD Researcher - NCSU**
+
+Hello everyone, I am Nikolaos(Nikos) and I am a 3rd year phd student at NCSU. I am a passionate researcher in web security and I am interested in collaborations in projects about security. 
 
 
-It makes use of a variety of open source projects including:
+**Research Interests:**
+* Web Security
+* User Privacy
+* Data Science
+* Machine Learning
 
-* [Cobra](https://github.com/spf13/cobra)
-* [Viper](https://github.com/spf13/viper)
-* [J Walter Weatherman](https://github.com/spf13/jWalterWeatherman)
-* [Cast](https://github.com/spf13/cast)
 
-Learn more and contribute on [GitHub](https://github.com/spf13).
+**Advisor:** 
+* [Kapravelos Alexandros](https://kapravelos.com)
 
-## Setup
 
-Some fun facts about [Hugo](http://gohugo.io/):
-
-* Built in [Go](http://golang.org/)
-* Loosely inspired by [Jekyll](http://jekyllrb.com/)
-* Primarily developed by [spf13](http://spf13.com/) on the train while commuting to and from Manhattan.
-* Coded in [Vim](http://vim.org) using [spf13-vim](http://vim.spf13.com/)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/spf13/hugo/issues/new) or [ask me on Twitter](https://twitter.com/spf13).
-
-Thanks for reading!
+*Thanks for reading!*
