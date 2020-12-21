@@ -24,6 +24,12 @@ publishDir = "docs"
             url = "about/"
 
             [[languages.en.menu.main]]
-            name = "Blog"
+            name = "Publications"
             weight = 2
-            url = "posts/"
+            url = "publications/"
+
+            [[languages.en.menu.main]]
+            name = "CV"
+            weight = 3
+            url = "cv/"
+

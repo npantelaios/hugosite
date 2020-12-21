@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+
+    
+    <meta name="description" content="Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343 PDF  ">
+    <meta name="keywords" content="">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="You&#39;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas"/>
+<meta name="twitter:description" content="Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343 PDF  "/>
+
+    <meta property="og:title" content="You&#39;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas" />
+<meta property="og:description" content="Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343 PDF  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://npantelaios.github.io/hugosite/publications/youve_changed/" />
+<meta property="article:published_time" content="2020-11-11T23:49:01-05:00" />
+<meta property="article:modified_time" content="2020-11-11T23:49:01-05:00" />
+
+
+    <title>
+  You&#39;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas · Nikolaos Pantelaios
+</title>
+
+    
+      <link rel="canonical" href="https://npantelaios.github.io/hugosite/publications/youve_changed/">
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
+      integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
+    
+      
+      
+      <link rel="stylesheet" href="/hugosite/css/coder.min.f01c647a0d25b40da992a37c3376291185eed8a50ced8c26cc2c0bcfe38c97df.css" integrity="sha256-8Bxkeg0ltA2pkqN8M3YpEYXu2KUM7YwmzCwLz&#43;OMl98=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="/hugosite/css/coder-dark.min.126ad3988d46bdae6217a11105b53c9662bca05f39d42d3c0fb366919d334620.css" integrity="sha256-EmrTmI1Gva5iF6ERBbU8lmK8oF851C08D7NmkZ0zRiA=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/hugosite/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/hugosite/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="/hugosite/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/hugosite/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.79.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/hugosite">
+      Nikolaos Pantelaios
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/hugosite/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/hugosite/publications/">Publications</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/hugosite/cv/">CV</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>You&#39;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas</h1>
+    </header>
+
+    <p><!-- raw HTML omitted --> <strong>Nikolaos Pantelaios</strong>, Nick Nikiforakis, and Alexandros Kapravelos. 2020. <em>You&rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas</em>. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343<!-- raw HTML omitted --></p>
+<ul>
+<li><a href="/pdfs/youve_changed.pdf">PDF</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+  </article>
+</section>
+
+  
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+      
+        ©
+        
+        2020
+        
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+        
+        <script src="/hugosite/js/dark-mode.min.0213e1773e6d1c5a644f847c67a6f8abac49a3776e2976f6008038af8c5b76a1.js"></script>
+      
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

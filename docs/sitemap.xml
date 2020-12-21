@@ -3,11 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://npantelaios.github.io/hugosite/categories/</loc>
+    <loc>https://npantelaios.github.io/hugosite/</loc>
+    <lastmod>2020-11-11T23:49:01-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://npantelaios.github.io/hugosite/</loc>
+    <loc>https://npantelaios.github.io/hugosite/publications/</loc>
+    <lastmod>2020-11-11T23:49:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://npantelaios.github.io/hugosite/publications/youve_changed/</loc>
+    <lastmod>2020-11-11T23:49:01-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://npantelaios.github.io/hugosite/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://npantelaios.github.io/hugosite/categories/</loc>
   </url>
   
   <url>
