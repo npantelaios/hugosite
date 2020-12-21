@@ -1,0 +1,5 @@
+baseURL = "https://npantelaios.github.io/quickstart"
+languageCode = "en-us"
+title = "Nikolaos Pantelaios"
+theme = "hugocoder"
+publishDir = "docs"
