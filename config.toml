@@ -3,3 +3,27 @@ languageCode = "en-us"
 title = "Nikolaos Pantelaios"
 theme = "hugocoder"
 publishDir = "docs"
+
+[params]
+    avatarURL = "images/avatar.jpg"
+
+    # Specify light/dark colorscheme
+    # Supported values:
+    # "auto" (use preference set by browser)
+    # "dark" (dark background, light foreground)
+    # "light" (light background, dark foreground) (default)
+    colorScheme = "auto"
+    
+[languages]
+    [languages.en]
+        languageName = "English"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            [[languages.en.menu.main]]
+            name = "Blog"
+            weight = 2
+            url = "posts/"
