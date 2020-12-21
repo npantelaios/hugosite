@@ -17,15 +17,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://npantelaios.github.io/hugosite/cv/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://npantelaios.github.io/hugosite/cv/</guid>
-      <description>1-page CV</description>
-    </item>
-    
-    <item>
       <title>About - Nikolaos Pantelaios</title>
       <link>https://npantelaios.github.io/hugosite/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -36,6 +27,24 @@ Hello everyone, I am Nikolaos(Nikos) and I am a 3rd year phd student at NCSU. I 
 Research Interests:
  Web Security User Privacy Data Science Machine Learning  Advisor:
  Kapravelos Alexandros  Thanks for reading!</description>
+    </item>
+    
+    <item>
+      <title>Contact me - Nikolaos Pantelaios</title>
+      <link>https://npantelaios.github.io/hugosite/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://npantelaios.github.io/hugosite/contact/</guid>
+      <description> Email: pantelaios.nikolaos@gmail.com  </description>
+    </item>
+    
+    <item>
+      <title>CV - Nikolaos Pantelaios</title>
+      <link>https://npantelaios.github.io/hugosite/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://npantelaios.github.io/hugosite/cv/</guid>
+      <description>1-page CV</description>
     </item>
     
   </channel>
