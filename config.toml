@@ -9,8 +9,8 @@ publishDir = "docs"
     description = "Nikolaos Pantelaios' personal website"
     keywords = "blog,developer,personal"
     info = "Security PhD Researcher"
-    avatarURL = "images/avatar.jpg"
-    #gravatar = "pantelaios.nikolaos@gmail.com"
+    avatarURL = "images/nikos1.png"
+    #gravatar = "images/nikos1.png"
     footerContent = "Welcome!"
 
     hideFooter = false
