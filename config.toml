@@ -16,7 +16,7 @@ publishDir = "docs"
     hideFooter = false
     hideCredits = false
     hideCopyright = false
-    since = 2020
+    since = 2022
 
     # Git Commit in Footer, uncomment the line below to enable it.
     commit = "https://github.com/npantelaios/hugosite"
