@@ -17,3 +17,5 @@ https://npantelaios.github.io/hugosite/
 --- hugo version currently used: --
 
 Hugo Static Site Generator v0.80.0-DEV linux/amd64 BuildDate: unknown -> build with brew/homebrew
+
+-----
