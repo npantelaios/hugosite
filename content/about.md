@@ -5,14 +5,14 @@ slug = "about"
 
 **PhD Researcher - NCSU**
 
-Hello everyone, I am Nikolaos(Nikos) and I am a 3rd year phd student at NCSU. I am a passionate researcher in web security and I am interested in collaborations in projects about security. 
+Hello everyone, I am Nikolaos(Nikos) and I am a final-year PhD Candidate at NCSU. I am a passionate researcher in Machine Learning, Natural Language Processing, Security and Privacy. 
 
 
 **Research Interests:**
+* Natural Language Processing
+* Code Generation
 * Web Security
 * User Privacy
-* Data Science
-* Machine Learning
 
 
 **Advisor:** 

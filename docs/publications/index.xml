@@ -6,15 +6,35 @@
     <description>Recent content in Publications on Nikolaos Pantelaios</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Nov 2020 23:49:01 -0500</lastBuildDate><atom:link href="https://npantelaios.github.io/hugosite/publications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 May 2024 23:49:01 -0500</lastBuildDate><atom:link href="https://npantelaios.github.io/hugosite/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FV8: A Forced Execution JavaScript Engine for Detecting Evasive Techniques</title>
+      <link>https://npantelaios.github.io/hugosite/publications/fvvvvvvvv8/</link>
+      <pubDate>Mon, 20 May 2024 23:49:01 -0500</pubDate>
+      
+      <guid>https://npantelaios.github.io/hugosite/publications/fvvvvvvvv8/</guid>
+      <description>Nikolaos Pantelaios, and Alexandros Kapravelos. 2024. FV8: A Forced Execution JavaScript Engine for Detecting Evasive Techniques. In proceedings of the Usenix Security Symposium, 2024
+Google Scholar for full list of publications: &amp;ndash;&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Manifest V3 Unveiled: Navigating the New Era of Browser Extensions</title>
+      <link>https://npantelaios.github.io/hugosite/publications/manifestv3/</link>
+      <pubDate>Fri, 01 Mar 2024 23:49:01 -0500</pubDate>
+      
+      <guid>https://npantelaios.github.io/hugosite/publications/manifestv3/</guid>
+      <description>Nikolaos Pantelaios, and Alexandros Kapravelos. 2024. Manifest V3 Unveiled: Navigating the New Era of Browser Extensions. arXiv preprint arXiv:2404.08310, 2024
+Google Scholar for full list of publications:</description>
+    </item>
+    
     <item>
       <title>You&#39;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas</title>
       <link>https://npantelaios.github.io/hugosite/publications/youve_changed/</link>
       <pubDate>Wed, 11 Nov 2020 23:49:01 -0500</pubDate>
       
       <guid>https://npantelaios.github.io/hugosite/publications/youve_changed/</guid>
-      <description> Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&amp;rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &amp;lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343
-PDF </description>
+      <description>Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&amp;rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &amp;lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343
+PDF Google Scholar for full list of publications:</description>
     </item>
     
   </channel>

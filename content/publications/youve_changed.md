@@ -7,6 +7,9 @@ date: 2020-11-11T23:49:01-05:00
 
 * [PDF](pdfs/youve_changed.pdf)
 
+
+
+[Google Scholar for full list of publications:](https://scholar.google.com/citations?user=kdp9jEEAAAAJ)
 <!---
 
  <a style="background-color:blue" src="/pdfs/youve_changed.pdf">[PDF]</a>
