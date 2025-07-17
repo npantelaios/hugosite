@@ -6,66 +6,49 @@
     <description>Recent content on Nikolaos Pantelaios</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 May 2024 23:49:01 -0500</lastBuildDate><atom:link href="https://npantelaios.github.io/hugosite/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 May 2024 23:49:01 -0500</lastBuildDate>
+    <atom:link href="https://npantelaios.github.io/hugosite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FV8: A Forced Execution JavaScript Engine for Detecting Evasive Techniques</title>
       <link>https://npantelaios.github.io/hugosite/publications/fvvvvvvvv8/</link>
       <pubDate>Mon, 20 May 2024 23:49:01 -0500</pubDate>
-      
       <guid>https://npantelaios.github.io/hugosite/publications/fvvvvvvvv8/</guid>
-      <description>Nikolaos Pantelaios, and Alexandros Kapravelos. 2024. FV8: A Forced Execution JavaScript Engine for Detecting Evasive Techniques. In proceedings of the Usenix Security Symposium, 2024
-Google Scholar for full list of publications: &amp;ndash;&amp;gt;</description>
+      <description>Nikolaos Pantelaios, and Alexandros Kapravelos. 2024. FV8: A Forced Execution JavaScript Engine for Detecting Evasive Techniques. In proceedings of the Usenix Security Symposium, 2024&#xA;Google Scholar for full list of publications: &amp;ndash;&amp;gt;</description>
     </item>
-    
     <item>
       <title>Manifest V3 Unveiled: Navigating the New Era of Browser Extensions</title>
       <link>https://npantelaios.github.io/hugosite/publications/manifestv3/</link>
       <pubDate>Fri, 01 Mar 2024 23:49:01 -0500</pubDate>
-      
       <guid>https://npantelaios.github.io/hugosite/publications/manifestv3/</guid>
-      <description>Nikolaos Pantelaios, and Alexandros Kapravelos. 2024. Manifest V3 Unveiled: Navigating the New Era of Browser Extensions. arXiv preprint arXiv:2404.08310, 2024
-Google Scholar for full list of publications:</description>
+      <description>Nikolaos Pantelaios, and Alexandros Kapravelos. 2024. Manifest V3 Unveiled: Navigating the New Era of Browser Extensions. arXiv preprint arXiv:2404.08310, 2024&#xA;Google Scholar for full list of publications:</description>
     </item>
-    
     <item>
       <title>You&#39;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas</title>
       <link>https://npantelaios.github.io/hugosite/publications/youve_changed/</link>
       <pubDate>Wed, 11 Nov 2020 23:49:01 -0500</pubDate>
-      
       <guid>https://npantelaios.github.io/hugosite/publications/youve_changed/</guid>
-      <description>Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&amp;rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &amp;lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343
-PDF Google Scholar for full list of publications:</description>
+      <description>Nikolaos Pantelaios, Nick Nikiforakis, and Alexandros Kapravelos. 2020. You&amp;rsquo;ve Changed: Detecting Malicious Browser Extensions through their Update Deltas. In Proceedings of the 2020 ACM SIGSAC Conference on Computer and Communications Security (CCS &amp;lsquo;20). Association for Computing Machinery, New York, NY, USA, 477–491. DOI:https://doi.org/10.1145/3372297.3423343&#xA;PDF Google Scholar for full list of publications:</description>
     </item>
-    
     <item>
       <title>About - Nikolaos Pantelaios</title>
       <link>https://npantelaios.github.io/hugosite/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://npantelaios.github.io/hugosite/about/</guid>
-      <description>PhD Researcher - NCSU
-Hello everyone, I am Nikolaos (Nikos) and I am an AI Research Scientist at Meta. I completed my PhD at NCSU. I am a passionate researcher in Machine Learning, Natural Language Processing, Security and Privacy.
-Research Interests:
-Natural Language Processing Code Generation Web Security User Privacy Thanks for reading!</description>
+      <description>PhD Researcher - NCSU&#xA;Hello everyone, I am Nikolaos (Nikos) and I am an AI Research Scientist at Meta. I completed my PhD at NCSU. I am a passionate researcher in Machine Learning, Natural Language Processing, Security and Privacy.&#xA;Research Interests:&#xA;Natural Language Processing Code Generation Web Security User Privacy Thanks for reading!</description>
     </item>
-    
     <item>
       <title>Contact me - Nikolaos Pantelaios</title>
       <link>https://npantelaios.github.io/hugosite/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://npantelaios.github.io/hugosite/contact/</guid>
       <description> Email: pantelaios.nikolaos [at] gmail.com </description>
     </item>
-    
     <item>
       <title>CV - Nikolaos Pantelaios</title>
       <link>https://npantelaios.github.io/hugosite/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://npantelaios.github.io/hugosite/cv/</guid>
       <description>RESUME</description>
     </item>
-    
   </channel>
 </rss>
