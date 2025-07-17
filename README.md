@@ -1,7 +1,7 @@
 **Start server locally:**
 hugo server -D
 
-**Build files for public folder**
+**Build files for docs folder** (publishDir = "docs")
 hugo
 
 **First-time setup**
