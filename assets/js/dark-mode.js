@@ -15,13 +15,13 @@ darkModeToggle.addEventListener('click', () => {
   setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
 });
 
-darkModeMediaQuery.addListener((event) => {
+darkModeMediaQuery.addEventListener('change', (event) => {
   setTheme(event.matches ? "dark" : "light");
 });
 
 function setTheme(theme) {
   body.classList.remove('colorscheme-auto');
-  inverse = theme === 'dark' ? 'light' : 'dark';
+  const inverse = theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('colorscheme', theme);
   body.classList.remove('colorscheme-' + inverse);
   body.classList.add('colorscheme-' + theme);
