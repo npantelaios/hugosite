@@ -2,7 +2,7 @@ const body = document.body;
 const darkModeToggle = document.getElementById('dark-mode-toggle');
 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Check if user preference is set, if not check value of body class for light or dark else it means that colorsheme = auto
+// Check if user preference is set, if not check value of body class for light or dark else it means that colorscheme = auto
 if (localStorage.getItem("colorscheme")) {
   setTheme(localStorage.getItem("colorscheme"));
 } else if (body.classList.contains('colorscheme-light') || body.classList.contains('colorscheme-dark')) {
@@ -15,9 +15,16 @@ darkModeToggle.addEventListener('click', () => {
   setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
 });
 
-darkModeMediaQuery.addEventListener('change', (event) => {
-  setTheme(event.matches ? "dark" : "light");
-});
+if (darkModeMediaQuery.addEventListener) {
+  darkModeMediaQuery.addEventListener('change', (event) => {
+    setTheme(event.matches ? "dark" : "light");
+  });
+} else if (darkModeMediaQuery.addListener) {
+  // Support for older browsers
+  darkModeMediaQuery.addListener((event) => {
+    setTheme(event.matches ? "dark" : "light");
+  });
+}
 
 function setTheme(theme) {
   body.classList.remove('colorscheme-auto');
