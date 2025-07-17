@@ -31,3 +31,12 @@ hugo version
 Hugo Static Site Generator v0.80.0-DEV linux/amd64 BuildDate: unknown -> build with brew/homebrew
 
 -----
+
+## Running tests
+
+Install dependencies and run Jest:
+
+```bash
+npm install
+npm test
+```
