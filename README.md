@@ -1,3 +1,11 @@
+**Start server locally:**
+hugo server -D
+
+**Build files for docs folder** (publishDir = "docs")
+hugo
+
+**First-time setup**
+
 # Personal Hugo Website
 
 This repository contains the source for a personal website built with the [Hugo](https://gohugo.io/) static site generator.
