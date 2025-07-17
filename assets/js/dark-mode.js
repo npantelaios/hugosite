@@ -15,13 +15,20 @@ darkModeToggle.addEventListener('click', () => {
   setTheme(body.classList.contains("colorscheme-dark") ? "light" : "dark");
 });
 
-darkModeMediaQuery.addListener((event) => {
-  setTheme(event.matches ? "dark" : "light");
-});
+if (darkModeMediaQuery.addEventListener) {
+  darkModeMediaQuery.addEventListener('change', (event) => {
+    setTheme(event.matches ? "dark" : "light");
+  });
+} else if (darkModeMediaQuery.addListener) {
+  // Support for older browsers
+  darkModeMediaQuery.addListener((event) => {
+    setTheme(event.matches ? "dark" : "light");
+  });
+}
 
 function setTheme(theme) {
   body.classList.remove('colorscheme-auto');
-  inverse = theme === 'dark' ? 'light' : 'dark';
+  const inverse = theme === 'dark' ? 'light' : 'dark';
   localStorage.setItem('colorscheme', theme);
   body.classList.remove('colorscheme-' + inverse);
   body.classList.add('colorscheme-' + theme);
