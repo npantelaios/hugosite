@@ -4,6 +4,16 @@ hugo server -D
 **Build files for public folder**
 hugo
 
+**First-time setup**
+1. Download the theme submodule:
+   ```bash
+   git submodule update --init --recursive
+   ```
+2. Install [Hugo](https://gohugo.io/) (on macOS you can use [Homebrew](https://brew.sh/)):
+   ```bash
+   brew install hugo
+   ```
+
 **Which files to update:**
 1) content/
 
