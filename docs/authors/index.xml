@@ -4,7 +4,8 @@
     <title>Authors on Nikolaos Pantelaios</title>
     <link>https://npantelaios.github.io/hugosite/authors/</link>
     <description>Recent content in Authors on Nikolaos Pantelaios</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://npantelaios.github.io/hugosite/authors/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <atom:link href="https://npantelaios.github.io/hugosite/authors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -8,7 +8,11 @@
 
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
-    <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">
+    {{ with .Keywords }}
+      <meta name="keywords" content="{{ delimit . "," }}">
+    {{ else }}
+      <meta name="keywords" content="{{ .Site.Params.keywords }}">
+    {{ end }}
 
     {{ template "_internal/twitter_cards.html" . }}
     {{ template "_internal/opengraph.html" . }}
@@ -19,42 +23,84 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{ end }}
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
       integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8/normalize.min.css">
-    {{ if .Site.IsServer }}
+    {{ if hugo.IsServer }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" "enableSourceMap" true ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ $coder := resources.Get "scss/coder.scss" }}
+      {{ if $coder }}
+        {{ $styles := $coder | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+      {{ else }}
+        {{ if fileExists "static/css/coder.css" }}
+          <link rel="stylesheet" href="{{ "css/coder.css" | relURL }}" media="screen">
+        {{ end }}
+      {{ end }}
     {{ else }}
       {{ $cssOpts := (dict "targetPath" "css/coder.css" ) }}
-      {{ $styles := resources.Get "scss/coder.scss" | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ $coder := resources.Get "scss/coder.scss" }}
+      {{ if $coder }}
+        {{ $styles := $coder | resources.ExecuteAsTemplate "style.coder.css" . | toCSS $cssOpts | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+      {{ else }}
+        {{ if fileExists "static/css/coder.css" }}
+          <link rel="stylesheet" href="{{ "css/coder.css" | relURL }}" media="screen" />
+        {{ end }}
+      {{ end }}
     {{ end }}
 
     {{ if .Site.Params.rtl }}
-      {{ if .Site.IsServer }}
+      {{ if hugo.IsServer }}
         {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+        {{ $rtl := resources.Get "scss/coder-rtl.scss" }}
+        {{ if $rtl }}
+          {{ $styles := $rtl | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts }}
+          <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+        {{ else }}
+          {{ if fileExists "static/css/coder-rtl.css" }}
+            <link rel="stylesheet" href="{{ "css/coder-rtl.css" | relURL }}" media="screen">
+          {{ end }}
+        {{ end }}
       {{ else }}
         {{ $cssOpts := (dict "targetPath" "css/coder-rtl.css" ) }}
-        {{ $styles := resources.Get "scss/coder-rtl.scss" | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ $rtl := resources.Get "scss/coder-rtl.scss" }}
+        {{ if $rtl }}
+          {{ $styles := $rtl | resources.ExecuteAsTemplate "style.coder-rtl.css" . | toCSS $cssOpts | minify | fingerprint }}
+          <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ else }}
+          {{ if fileExists "static/css/coder-rtl.css" }}
+            <link rel="stylesheet" href="{{ "css/coder-rtl.css" | relURL }}" media="screen" />
+          {{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
 
     {{ if  or (eq .Site.Params.colorScheme "auto") (eq .Site.Params.colorScheme "dark") }}
-      {{ if .Site.IsServer }}
+      {{ if hugo.IsServer }}
         {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+        {{ $dark := resources.Get "scss/coder-dark.scss" }}
+        {{ if $dark }}
+          {{ $styles := $dark | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
+          <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+        {{ else }}
+          {{ if fileExists "static/css/coder-dark.css" }}
+            <link rel="stylesheet" href="{{ "css/coder-dark.css" | relURL }}" media="screen">
+          {{ end }}
+        {{ end }}
       {{ else }}
         {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ $dark := resources.Get "scss/coder-dark.scss" }}
+        {{ if $dark }}
+          {{ $styles := $dark | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
+          <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ else }}
+          {{ if fileExists "static/css/coder-dark.css" }}
+            <link rel="stylesheet" href="{{ "css/coder-dark.css" | relURL }}" media="screen" />
+          {{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
 
@@ -64,20 +110,25 @@
 
     {{ range .Site.Params.customSCSS }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
-      {{ if $.Site.IsServer }}
+      {{ if hugo.IsServer }}
         {{ $cssOpts := (dict "enableSourceMap" true ) }}
-        {{ $styles := resources.Get . | toCSS $cssOpts }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+        {{ $cs := resources.Get . }}
+        {{ if $cs }}
+          {{ $styles := $cs | toCSS $cssOpts }}
+          <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+        {{ end }}
       {{ else }}
-        {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ $cs := resources.Get . }}
+        {{ if $cs }}
+          {{ $styles := $cs | toCSS | minify | fingerprint }}
+          <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
+        {{ end }}
       {{ end }}
     {{ end }}
 
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_32 | default "/images/favicon-32x32.png" | relURL }}" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.Params.favicon_16 | default "/images/favicon-16x16.png" | relURL }}" sizes="16x16">
 
-    <link rel="apple-touch-icon" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.touchicon | default "/images/apple-touch-icon.png" | relURL }}">
 
     {{ range .AlternativeOutputFormats -}}
@@ -98,9 +149,7 @@
   {{ else if eq .Site.Params.colorScheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"
-        onload="{{ if .Site.Params.enableTwemoji }} twemoji.parse(document.body); {{ end }}"
-  >
+  <body class="{{ $csClass }}{{ if .Site.Params.rtl }} rtl{{ end }}"{{ if .Site.Params.enableTwemoji }} onload="twemoji.parse(document.body);"{{ end }}>
     {{ partial "float" . }}
     <main class="wrapper">
       {{ partial "header.html" . }}
@@ -113,7 +162,7 @@
     </main>
 
     {{ if not .Site.Params.hideColorSchemeToggle }}
-      {{ if .Site.IsServer }}
+      {{ if hugo.IsServer }}
         {{ $script := resources.Get "js/dark-mode.js" }}
         <script src="{{ $script.RelPermalink }}"></script>
       {{ else }}

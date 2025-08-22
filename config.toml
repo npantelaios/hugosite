@@ -113,3 +113,7 @@ publishDir = "docs"
             name = "Contact Me"
             weight = 4
             url = "contact/"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
