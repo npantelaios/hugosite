@@ -1,5 +1,7 @@
 /* X feed on the homepage — matches the coder theme, light + dark */
 .xfeed { margin-top: 1rem; }
+/* the theme's .content wrapper is display:flex (row); this forces one stacked column */
+.home-page { width: 100%; }
 .xfeed-head { text-align: center; margin: 3.2rem 0 1.6rem; }
 .xfeed-avatar { width: 9rem; height: 9rem; border-radius: 50%; object-fit: cover; }
 .xfeed-title { font-size: 2.2rem !important; margin: 1rem 0 0 !important; }
