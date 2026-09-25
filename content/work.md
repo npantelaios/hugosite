@@ -13,7 +13,7 @@ title = "Work - Nikolaos Pantelaios"
     <div class="timeline-period">2018 – 2024</div>
     <div class="timeline-role">PhD in Computer Science</div>
     <div class="timeline-org">NC State University</div>
-    <p class="timeline-desc">Web security research: JavaScript engine analysis and fuzzing (FV8), malicious npm package detection, evasion techniques. Advisor: Alexandros Kapravelos.</p>
+    <p class="timeline-desc">Web and supply chain security research, applying AI to JavaScript engine analysis and fuzzing (FV8), malicious npm package detection, and evasion techniques. Advisor: Alexandros Kapravelos.</p>
   </div>
 </div>
 
