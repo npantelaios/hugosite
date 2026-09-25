@@ -39,7 +39,7 @@ publishDir = "docs"
     enableTwemoji = true
 
     # Custom CSS
-    customCSS = ["css/x-feed.css"]
+    customCSS = ["css/x-feed.css", "css/timeline.css"]
 
     # Custom SCSS
     customSCSS = []
@@ -109,13 +109,18 @@ publishDir = "docs"
             url = "publications/"
 
             [[languages.en.menu.main]]
-            name = "Resume"
+            name = "Writing"
             weight = 4
+            url = "posts/"
+
+            [[languages.en.menu.main]]
+            name = "Resume"
+            weight = 5
             url = "resume/"
 
             [[languages.en.menu.main]]
             name = "Contact Me"
-            weight = 5
+            weight = 6
             url = "contact/"
 [markup]
   [markup.goldmark]
