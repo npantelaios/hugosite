@@ -99,14 +99,14 @@ publishDir = "docs"
             url = "about/"
 
             [[languages.en.menu.main]]
-            name = "Publications"
+            name = "Work"
             weight = 2
-            url = "publications/"
+            url = "work/"
 
             [[languages.en.menu.main]]
-            name = "CV"
+            name = "Resume"
             weight = 3
-            url = "cv/"
+            url = "resume/"
 
             [[languages.en.menu.main]]
             name = "Contact Me"
