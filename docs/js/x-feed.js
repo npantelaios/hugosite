@@ -16,8 +16,9 @@
   }
   function plainText(s) {
     var t = s.raw_text;
+    if (t != null && typeof t === 'object') t = t.text;
     if (t == null && s.text != null) t = String(s.text).replace(/<[^>]*>/g, '');
-    return t == null ? '' : t;
+    return t == null ? '' : String(t);
   }
   function linkify(s) {
     return esc(s)
