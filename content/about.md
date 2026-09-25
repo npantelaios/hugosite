@@ -3,18 +3,19 @@ title = "About - Nikolaos Pantelaios"
 slug = "about"
 +++
 
-**AI Research Scientist - Meta**
+**AI Research Scientist — Meta**
 
-Hello everyone, I am Nikolaos (Nikos) and I am an AI Research Scientist at Meta. I completed my PhD at NCSU. I am a passionate researcher in Machine Learning, Natural Language Processing, Security and Privacy. 
+Hi, I'm Nikolaos (Nikos) Pantelaios. I'm an AI Research Scientist at Meta, working on post-training for Muse and the Muse Spark model family — RL and post-training for frontier models.
 
+Before Meta, I did my PhD in Computer Science at NC State University (2018–2024), advised by Alexandros Kapravelos. My research was in web security: JavaScript engine analysis and fuzzing (FV8), malicious npm package detection, and evasion techniques.
 
-**Research Interests:**
-* Gen AI
-* LLM
+I'm originally from Greece and now based in New York.
+
+**Research interests:**
+* Post-training & RL for LLMs
+* Generative AI
 * Natural Language Processing
-* Product
 * Web Security
 * User Privacy
-
 
 *Thanks for reading!*
