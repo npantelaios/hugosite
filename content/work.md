@@ -4,7 +4,7 @@ title = "Work - Nikolaos Pantelaios"
 
 ## What I do
 
-Senior Engineer at Meta, working on post-training for **Muse** — Meta's personal AI assistant — and the **Muse Spark** model family. (Mar 2025 – present)
+Senior AI Research Scientist at Meta, working on post-training for **Muse** — Meta's personal AI assistant — and the **Muse Spark** model family. (Mar 2025 – present)
 
 ## Find me
 
