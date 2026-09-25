@@ -39,13 +39,13 @@ publishDir = "docs"
     enableTwemoji = true
 
     # Custom CSS
-    customCSS = []
+    customCSS = ["css/x-feed.css"]
 
     # Custom SCSS
     customSCSS = []
 
     # Custom JS
-    customJS = []
+    customJS = ["js/x-feed.js"]
 
 # If you want to use fathom(https://usefathom.com) for analytics, add this section
 [params.fathomAnalytics]
