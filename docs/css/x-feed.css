@@ -1,6 +1,33 @@
 /* X feed on the homepage — matches the coder theme, light + dark */
 .xfeed { margin-top: 1rem; }
 .xfeed-title { font-size: 2.2rem !important; margin: 3.2rem 0 1.6rem !important; }
+
+/* profile header */
+.xfeed-profile { border: 1px solid #e0e0e0; border-radius: 1rem; overflow: hidden; margin: 3.2rem 0 0; }
+.xfeed-banner {
+  height: 14rem;
+  background: #1d9bf0 url('https://pbs.twimg.com/profile_banners/1250514449603022848/1782529340/1500x500') center / cover no-repeat;
+}
+.xfeed-profile-body { padding: 0 1.8rem 1.8rem; }
+.xfeed-profile-top { display: flex; justify-content: space-between; align-items: flex-end; margin-top: -4rem; margin-bottom: 1rem; }
+.xfeed-profile-avatar { width: 8.8rem; height: 8.8rem; border-radius: 50%; border: 4px solid #fff; background: #fff; }
+.xfeed-follow {
+  font-family: Lato, Helvetica, sans-serif; font-weight: 700; font-size: 1.4rem;
+  color: #fff; background: #0f1419; border-radius: 9999px; padding: .8rem 2rem;
+  text-decoration: none; margin-bottom: .6rem; white-space: nowrap;
+}
+.xfeed-follow:hover { background: #272c30; color: #fff; }
+.xfeed-profile-name { font-family: Lato, Helvetica, sans-serif; font-weight: 800; font-size: 2rem; color: #212121; line-height: 1.25; }
+.xfeed-profile-handle { font-size: 1.4rem; color: #757575; margin-bottom: .8rem; }
+.xfeed-profile-bio { font-size: 1.5rem; line-height: 1.55; margin: 0 0 1.2rem; overflow-wrap: break-word; }
+.xfeed-profile-stats { display: flex; gap: 1.8rem; font-size: 1.4rem; color: #757575; }
+.xfeed-profile-stats strong { color: #212121; font-weight: 700; }
+@media (max-width: 600px) {
+  .xfeed-banner { height: 10rem; }
+  .xfeed-profile-avatar { width: 7rem; height: 7rem; }
+  .xfeed-profile-top { margin-top: -3.2rem; }
+}
+
 .xfeed-list { display: flex; flex-direction: column; gap: 1.6rem; }
 .xfeed-card { border: 1px solid #e0e0e0; border-radius: 1rem; padding: 1.6rem; }
 .xfeed-repost-label { font-size: 1.2rem; color: #757575; text-transform: uppercase; letter-spacing: .08em; margin-bottom: .8rem; }
@@ -21,8 +48,20 @@
 body.colorscheme-dark .xfeed-card { border-color: #424242; }
 body.colorscheme-dark .xfeed-name { color: #dadada; }
 body.colorscheme-dark .xfeed-text a { color: #42a5f5; }
+body.colorscheme-dark .xfeed-profile { border-color: #424242; }
+body.colorscheme-dark .xfeed-profile-avatar { border-color: #212121; background: #212121; }
+body.colorscheme-dark .xfeed-profile-name { color: #dadada; }
+body.colorscheme-dark .xfeed-profile-stats strong { color: #dadada; }
+body.colorscheme-dark .xfeed-follow { background: #eff3f4; color: #0f1419; }
+body.colorscheme-dark .xfeed-follow:hover { background: #d7dbdc; color: #0f1419; }
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .xfeed-card { border-color: #424242; }
   body.colorscheme-auto .xfeed-name { color: #dadada; }
   body.colorscheme-auto .xfeed-text a { color: #42a5f5; }
+  body.colorscheme-auto .xfeed-profile { border-color: #424242; }
+  body.colorscheme-auto .xfeed-profile-avatar { border-color: #212121; background: #212121; }
+  body.colorscheme-auto .xfeed-profile-name { color: #dadada; }
+  body.colorscheme-auto .xfeed-profile-stats strong { color: #dadada; }
+  body.colorscheme-auto .xfeed-follow { background: #eff3f4; color: #0f1419; }
+  body.colorscheme-auto .xfeed-follow:hover { background: #d7dbdc; color: #0f1419; }
 }
