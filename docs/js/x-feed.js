@@ -65,38 +65,6 @@
       '</article>';
   }
 
-  var PROFILE_API = 'https://api.fxtwitter.com/2/profile/' + HANDLE;
-
-  function refreshProfile() {
-    var avatarEl = document.getElementById('x-feed-avatar');
-    var bioEl = document.getElementById('x-feed-bio');
-    var statsEl = document.getElementById('x-feed-stats');
-    if (!avatarEl && !bioEl && !statsEl) return;
-    fetch(PROFILE_API)
-      .then(function (r) { if (!r.ok) throw new Error('profile failed'); return r.json(); })
-      .then(function (d) {
-        var u = d.user || d;
-        if (!u || !u.screen_name) return;
-        if (avatarEl && u.avatar_url) {
-          avatarEl.src = String(u.avatar_url).replace('_normal.', '_400x400.');
-        }
-        if (bioEl) {
-          var desc = (u.raw_description && typeof u.raw_description === 'object')
-            ? u.raw_description.text : u.description;
-          if (desc) bioEl.innerHTML = linkify(String(desc));
-        }
-        if (statsEl) {
-          statsEl.innerHTML =
-            '<span><strong>' + fmt(u.statuses) + '</strong> Posts</span>' +
-            '<span><strong>' + fmt(u.followers) + '</strong> Followers</span>' +
-            '<span><strong>' + fmt(u.following) + '</strong> Following</span>';
-        }
-      })
-      .catch(function () { /* keep the static fallback header */ });
-  }
-
-  refreshProfile();
-
   fetch(API)
     .then(function (r) { if (!r.ok) throw new Error('feed failed'); return r.json(); })
     .then(function (d) {
